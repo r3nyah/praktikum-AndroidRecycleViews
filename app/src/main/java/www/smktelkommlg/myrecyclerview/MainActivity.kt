@@ -23,11 +23,7 @@ class MainActivity : AppCompatActivity() {
         showRecyclerList()
     }
 
-    private fun showRecyclerList() {
-        rvHeroes.layoutManager = LinearLayoutManager(this)
-        val listHeroAdapter = ListHeroAdapter(list)
-        rvHeroes.adapter = listHeroAdapter
-    }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
@@ -50,12 +46,23 @@ class MainActivity : AppCompatActivity() {
             }
 
             R.id.action_cardview -> {
+                showRecyclerCard()
             }
         }
+    }
+    private fun showRecyclerList() {
+        rvHeroes.layoutManager = LinearLayoutManager(this)
+        val listHeroAdapter = ListHeroAdapter(list)
+        rvHeroes.adapter = listHeroAdapter
     }
     private fun showRecyclerGrid(){
         rvHeroes.layoutManager = GridLayoutManager(this ,2)
         val gridHeroAdapter = GridHeroAdapter(list)
         rvHeroes.adapter = gridHeroAdapter
+    }
+    private fun showRecyclerCard(){
+        rvHeroes.layoutManager = LinearLayoutManager(this)
+        val cardHeroAdapter = CardHeroAdapter(list)
+        rvHeroes.adapter = cardHeroAdapter
     }
 }

@@ -22,7 +22,7 @@ class GridHeroAdapter(val listHeroes: ArrayList<Hero>) : RecyclerView.Adapter<Gr
     override fun onBindViewHolder(holder: GridViewHolder, position: Int) {
         Glide.with(holder.itemView.context)
             .load(listHeroes[position].photo)
-            .apply(RequestOptions().override(350, 550))
+        .apply(RequestOptions().override(350, 550))
             .into(holder.imgPhoto)
     }
 
