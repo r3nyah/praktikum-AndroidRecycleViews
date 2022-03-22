@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#6A0DAD</color>
     <color name="lightpurple">#A865C9</color>
+    <color name="darkyellow">#9b870c</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="lightyellow">#FFFF99</color>
 </resources>

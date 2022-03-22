@@ -60,7 +60,7 @@
 
             <Button
                 android:id="@+id/btn_set_favorite"
-                app:backgroundTint="@color/lightpurple"
+                app:backgroundTint="@color/darkyellow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -68,11 +68,12 @@
                 android:textSize="12sp" />
             <Button
                 android:id="@+id/btn_set_share"
-                app:backgroundTint="@color/purple"
+                app:backgroundTint="@color/lightyellow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/share"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>
 
