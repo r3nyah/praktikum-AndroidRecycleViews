@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import www.smktelkommlg.myrecyclerview.CardHeroAdapter.*
+
 
 
 class CardHeroAdapter(val listHeroes: ArrayList<Hero>) : RecyclerView.Adapter<CardHeroAdapter.CardViewHolder>(){

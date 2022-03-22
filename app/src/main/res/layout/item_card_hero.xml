@@ -1,6 +1,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -59,7 +60,7 @@
 
             <Button
                 android:id="@+id/btn_set_favorite"
-                style="@style/Widget.AppCompat.Button.Colored"
+                app:backgroundTint="@color/lightpurple"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -67,7 +68,7 @@
                 android:textSize="12sp" />
             <Button
                 android:id="@+id/btn_set_share"
-                style="@style/Widget.AppCompat.Button.Colored"
+                app:backgroundTint="@color/purple"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
