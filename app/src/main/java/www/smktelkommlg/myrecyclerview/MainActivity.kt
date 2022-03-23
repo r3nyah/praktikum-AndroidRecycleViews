@@ -65,4 +65,9 @@ class MainActivity : AppCompatActivity() {
         val cardHeroAdapter = CardHeroAdapter(list)
         rvHeroes.adapter = cardHeroAdapter
     }
+
+    override fun onBackPressed(){
+            finishAffinity()
+
+    }
 }
